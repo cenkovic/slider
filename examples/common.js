@@ -23356,7 +23356,8 @@
 	      length = _ref.length;
 	
 	  var style = {
-	    visibility: included ? 'visible' : 'hidden'
+	    visibility: included ? 'visible' : 'hidden',
+	    backgroundColor: '#1793c7'
 	  };
 	  if (vertical) {
 	    style.bottom = offset + '%';
@@ -23913,7 +23914,11 @@
 	
 	
 	    var style = vertical ? { bottom: offset + '%' } : { left: offset + '%' };
-	    return _react2.default.createElement('div', { className: className, style: style });
+	    return _react2.default.createElement(
+	      'div',
+	      { className: className, style: style },
+	      parseInt(offset)
+	    );
 	  };
 	
 	  return Handle;
